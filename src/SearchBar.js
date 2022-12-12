@@ -7,7 +7,7 @@ const SearchBar = ({ posts, setSearchResults }) => {
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(posts)
 
-        const resultsArray = posts.filter(post => post.title.includes(e.target.value) || post.body.includes(e.target.value))
+        const resultsArray = posts.filter(post => post.name.includes(e.target.value) || post.price.includes(e.target.value))
 
         setSearchResults(resultsArray)
     }
