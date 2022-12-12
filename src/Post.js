@@ -1,8 +1,8 @@
 const Post = ({ post }) => {
     return (
         <article>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
+            <h2>{post.name}</h2>
+            <p>{post.price}</p>
             <p>Post ID: {post.id}</p>
         </article>
     )
